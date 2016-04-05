@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jupyter:
+    image: jupyter
+    build: .
+    command: jupyter notebook --ip=0.0.0.0
+    ports:
+      - "8080:8888"
+    volumes:
+      - .:/root/notebooks/
+
