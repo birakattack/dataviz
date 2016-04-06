@@ -16,4 +16,4 @@ WORKDIR /root/notebooks/
 
 EXPOSE 8888
 
-CMD ["jupyter", "notebook", "--ip=0.0.0.0"]
+CMD sudo jupyter notebook --ip=*
